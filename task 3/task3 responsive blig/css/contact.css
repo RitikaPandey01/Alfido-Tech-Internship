@@ -1,0 +1,21 @@
+.contact-content {
+  height: 100vh;
+  margin-top: 32px;
+  padding: 9px;
+  position: relative;
+  overflow: hidden; /*scroller ko avoid karne ke liye */
+}
+
+.contact-content::after {
+  content: "";
+  background-image: url(/images2004/study\ table.webp);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: inherit;
+  opacity: 0.15;
+  border-radius: 12px;
+  z-index: -1;    /*voh contact form img ke peeche chala gaya tha usko upper lane ke liye */
+}
+
+

@@ -1,0 +1,143 @@
+* {
+  margin: 0; /* margin 0 or padding 0 se side ki space khatam ho jaye gi*/
+  padding: 0;
+}
+
+.navigation {
+  margin-top: 25px;
+  font-family: var(--font1);
+  /*height: 74px;*/
+  display: flex;
+  justify-content: space-between; /*space-between se cheeze side side me chali jati hai */ /*flex is very easy to use */
+  align-items: center; /*jo content upper ko chipak gaya hai voh neeche ko aa jaye */
+}
+
+.nav-left {
+  display: flex; /*flex se chezze sisde by aa jati hai */
+}
+.nav-left span{
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 22px;
+  padding-bottom: 23px;
+}
+
+.nav-left ul li {
+  list-style: none; /*isse jo dot honge voh chale jaye ge */
+  margin: 0 14px;
+  font-family: var(--font2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left ul li a:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+
+.content {
+  height: 100%;
+  /* background-color: rgb(239, 239, 244);*/
+  display: flex;
+  margin-top: 32px;
+  padding: 9px;
+  position: relative;
+}
+
+.content::after{
+  content: "";
+background-image: url(/images2004/study\ table.webp);
+position: absolute;
+width: 100%;
+height: inherit;
+opacity: 0.15;
+border-radius: 12px;
+}
+
+.content-left {
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  padding: 50px;
+  z-index: 1;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+  height: 299px;
+  width: 305px;
+  border: 3px solid black;
+  border-radius: 208px;
+  padding: 2px;
+}
+
+.home-articles {
+  background-color: rgb(255, 222, 247);
+  padding: 18px;
+  margin-top: 23px;
+  position: relative;
+}
+.year-box{
+  position: absolute;
+  width: 234px;
+  height: 255px;
+  /*background-color: red;*/
+  right: 5px;
+  top: 11px;
+  font-size: 18px;
+
+}
+
+.year-box div{
+  margin: 12px 0px;
+}
+
+.home-article {
+  display: flex;
+  margin: 25px;
+}
+
+.home-articles img{
+  width: 300px;
+  height: 250px;
+}
+
+.home-article-content{
+  align-self: center;
+  padding: 25px;
+}
+.home-article-content a{
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.footer a{
+  color: white;
+}

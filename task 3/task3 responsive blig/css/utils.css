@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NL+Guides&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NL+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --main-bg-color: purple;
+  --font1: "Poetsen One", sans-serif;
+  --font2: "Roboto", sans-serif;
+}
+
+.center{
+  text-align: center;
+}
+
+font1{
+  font-family: var(--font1);
+}
+
+font2{
+font-family: var(--font2);
+}
+
+/*max-width-1,2 ko hum is liye ceate kar rahe jisse sara chez ceneter me aa jaye */
+/*vw means view port width isse screen choti hone pe bhi koi effect nahi dikhe ga */
+
+.max-width-1 {
+  max-width: 80vw;
+}
+
+.max-width-2 {
+  max-width: 60vw;
+}
+
+/*m-auto se content center me aa jaye ga */
+
+.m-auto {
+  margin: auto;
+}
+.mx-1{
+  margin-left: 23px;
+ 
+}
+
+.my-2{
+margin-top: 12px;
+margin-bottom: 12px;
+
+}
+
+.btn {
+  padding: 5px 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: var(--font2);
+  font-size: 16px;
+  cursor: pointer; /*jo arrow hai voh hath me convert ho jaye*/
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  /*hover matlab arrow le ke jane pe color change hoga */
+  color: white;
+  background-color: var(--main-bg-color);
+}
+
+/*given name as per bootsrap*/
+
+.form-input {
+  padding: 6px 7px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0 13px;
+  font-family: var(--font2);
+  font-weight: 540;
+}
+
+.form-box input, textarea {
+  width: 52vw;
+  margin: 7px 0;
+  padding: 1px 6px;
+  font-size: 18px;
+  font-family: var(--font1);
+  border: 2px solid var(--main-bg-color);
+  border-radius: 10px ;
+}
